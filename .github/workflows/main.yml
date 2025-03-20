@@ -51,7 +51,6 @@ jobs:
         with:
           files: dist/*
           tag_name: latest
-          release_name: "Neueste Version"
           body: "Hier sind die neuesten Builds für Windows, macOS und Linux."
           draft: false
           prerelease: false
