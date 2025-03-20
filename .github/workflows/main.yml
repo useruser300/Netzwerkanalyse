@@ -1,0 +1,51 @@
+name: Build Executables
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - name: Check out Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11.11"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build Executable
+        run: |
+          pyinstaller --onefile --windowed --name netzwerkanalyse-${{ runner.os }} start.py
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: binary-${{ runner.os }}
+          path: dist/*
+
+      - name: Release Build
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*
+          tag_name: latest
+          release_name: "Neueste Version"
+          body: "Hier sind die neuesten Builds für Windows, macOS und Linux."
+          draft: false
+          prerelease: false
