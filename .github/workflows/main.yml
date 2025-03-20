@@ -13,7 +13,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]  # Ubuntu 20.04 für Stabilität
+        os: [ubuntu-20.04, macos-latest, windows-latest]  # Ubuntu 20.04 für Stabilität
 
     steps:
       - name: 📥 Check out Repository
@@ -45,6 +45,11 @@ jobs:
       - name: 🔍 Debugging Zeige Inhalt von dist/
         run: ls -l dist/ || echo "Kein Output gefunden in dist/"
 
+      - name: 📤 Upload Artifact
+        uses: actions/upload-artifact@v3  # @v3 statt @v2 nutzen
+        with:
+          name: binary-${{ runner.os }}
+          path: dist/*
 
       - name: 🚀 Release Build
         uses: softprops/action-gh-release@v1
