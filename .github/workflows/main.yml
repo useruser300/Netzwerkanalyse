@@ -45,11 +45,6 @@ jobs:
       - name: 🔍 Debugging Zeige Inhalt von dist/
         run: ls -l dist/ || echo "Kein Output gefunden in dist/"
 
-      - name: 📤 Upload Artifact
-        uses: actions/upload-artifact@v3  # @v3 statt @v2 nutzen
-        with:
-          name: binary-${{ runner.os }}
-          path: dist/*
 
       - name: 🚀 Release Build
         uses: softprops/action-gh-release@v1
