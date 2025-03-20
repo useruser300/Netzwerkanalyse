@@ -30,10 +30,10 @@ jobs:
           if [ -f "requirements.txt" ]; then pip install -r requirements.txt; else echo "requirements.txt nicht gefunden, überspringe diesen Schritt"; fi
           pip install pyinstaller
 
-      - name: 🔍 Debugging: Prüfe start.py
+      - name: 🔍 Debugging Prüfe start.py
         run: ls -l start.py || echo "start.py nicht gefunden!"
 
-      - name: 🔍 Debugging: Prüfe PyInstaller
+      - name: 🔍 Debugging Prüfe PyInstaller
         run: |
           python --version
           pip show pyinstaller || echo "PyInstaller nicht installiert!"
@@ -42,7 +42,7 @@ jobs:
         run: |
           pyinstaller --onefile --windowed --name netzwerkanalyse-${{ runner.os }} start.py
 
-      - name: 🔍 Debugging: Zeige Inhalt von dist/
+      - name: 🔍 Debugging Zeige Inhalt von dist/
         run: ls -l dist/ || echo "Kein Output gefunden in dist/"
 
       - name: 📤 Upload Artifact
