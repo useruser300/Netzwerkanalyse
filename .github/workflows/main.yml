@@ -34,7 +34,7 @@ jobs:
         run: |
           pyinstaller --onefile --windowed --name netzwerkanalyse-${{ runner.os }} start.py
 
-      - name: 🔍 Debugging: Zeige Inhalt von dist/
+      - name: 🔍 Debugging Zeige Inhalt von dist/
         run: ls -l dist/ || echo "Kein Output gefunden in dist/"
 
       - name: 📤 Upload Artifact
