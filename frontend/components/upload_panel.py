@@ -155,4 +155,4 @@ class UploadPanel(QWidget):
         """
         self.status_label.setText("✅ Analyse abgeschlossen!")
         for row in range(self.files_table.rowCount()):
-            self.files_table.setItem(row, 2, QTableWidgetItem("✔️ analysiert"))
+            self.files_table.setItem(row, 2, QTableWidgetItem("analysiert"))
