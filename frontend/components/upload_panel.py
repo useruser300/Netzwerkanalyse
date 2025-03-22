@@ -156,3 +156,6 @@ class UploadPanel(QWidget):
         self.status_label.setText("✅ Analyse abgeschlossen!")
         for row in range(self.files_table.rowCount()):
             self.files_table.setItem(row, 2, QTableWidgetItem("analysiert"))
+        # Greife auf das AnalysisSection des SingleGraphTab zu, das über das Parent-Widget erreichbar ist.
+        if hasattr(self.parent, "single_graph_tab") and hasattr(self.parent.single_graph_tab, "analysis_section"):
+            self.parent.single_graph_tab.analysis_section.load_analysis_results()
