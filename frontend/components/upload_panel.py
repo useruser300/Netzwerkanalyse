@@ -159,3 +159,5 @@ class UploadPanel(QWidget):
         # Greife auf das AnalysisSection des SingleGraphTab zu, das über das Parent-Widget erreichbar ist.
         if hasattr(self.parent, "single_graph_tab") and hasattr(self.parent.single_graph_tab, "analysis_section"):
             self.parent.single_graph_tab.analysis_section.load_analysis_results()
+            # Leere die Liste der hochgeladenen Dateien
+        self.uploaded_files.clear()
