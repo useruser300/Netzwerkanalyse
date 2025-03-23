@@ -55,4 +55,24 @@ class Toolbar(QToolBar):
         QMessageBox.information(self, "Einstellungen", "Hier könnten später Anpassungen vorgenommen werden.")
 
     def show_help(self):
-        QMessageBox.information(self, "Hilfe", "Hier kommt die Anleitung zur Benutzung.")
+        help_text = (
+        "🛠️ Bedienungsschritte – So nutzt du das Tool\n\n"
+        "🔹 Schritt 1: Start & Übersicht\n"
+        "- Linker Bereich: Datei-Upload\n"
+        "- Rechter Bereich: Einzelgraph- und Datensatz-Analyse\n"
+        "- Oben: Toolbar mit Export- & Hilfefunktionen\n\n"
+        "🔹 Schritt 2: Netzwerkdateien hochladen\n"
+        "- Klicke auf „Datei hochladen“ und wähle .graphml, .xml, .txt, .cch\n\n"
+        "🔹 Schritt 3: Analyse starten\n"
+        "- Klicke auf „Analyse starten“ → Ergebnisse erscheinen in den Tabs\n\n"
+        "🔹 Schritt 4: Einzelgraph-Analyse\n"
+        "- Filter, Metrikauswahl, Schnellsuche\n"
+        "- Spalten & Zeilen lassen sich manuell in der Größe anpassen\n"
+        "- Doppelklick zeigt die Visualisierung\n\n"
+        "🔹 Schritt 5: Visualisierung\n"
+        "- Statische Anzeige (Matplotlib), QSplitter für Größenanpassung\n\n"
+        "🔹 Schritt 6: Datensatz-Analyse\n"
+        "- Wähle Quelle, lade Analyse, sehe zwei Diagramme (0–1 & reelle Werte)\n"
+        "- Metriken ein-/ausblenden, Diagramme passen sich an"
+    )
+        QMessageBox.information(self, "Hilfe", help_text)
