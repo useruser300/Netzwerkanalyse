@@ -37,8 +37,6 @@ Nach dem Öffnen erscheint die Hauptansicht mit:
   - Einzelgraph-Analyse
   - Datensatz-Analyse
 - **Oben:** Toolbar (Menüleiste)
-- **Unten:** Statusleiste mit Rückmeldungen
-
 ---
 
 ### Schritt 2: Dateien hochladen
@@ -108,7 +106,7 @@ Im Tab **„Datensatz-Analyse“**:
 - **Diagramm 1**: Metriken mit Werten zwischen 0–1 (z. B. Dichte, Effizienz)
 - **Diagramm 2**: Reelle Werte (z. B. Knotenzahl, Durchmesser)
 
-> Über das Menü kannst du:
+> Über das Metrikauswahlmenü kannst du:
 > - Metriken **ein-/ausblenden**
 > - Die Auswahl auf **Standardwerte zurücksetzen**  
 > Die Diagramme **aktualisieren sich automatisch**
