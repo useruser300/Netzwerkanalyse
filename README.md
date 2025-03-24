@@ -1,4 +1,4 @@
-# Netzwerk-Analyse-Tool (Beta-Version)
+# Netzwerk-Analyse-Tool
 
 ## Einführung zum Tool & Hinweis zur Testversion
 
