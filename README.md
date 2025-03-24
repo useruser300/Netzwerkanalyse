@@ -118,6 +118,7 @@ Im Tab **„Datensatz-Analyse“**:
 ## Feedback geben
 
 Bitte gib uns Feedback zu folgenden Punkten:
+👉 **Gib dein Feedback hier ab:** [Feedback-Seite öffnen](https://github.com/dein-nutzername/dein-repo/issues)
 
 | Bereich         | Beispielhafte Fragen |
 |----------------|----------------------|
