@@ -116,7 +116,7 @@ Im Tab **„Datensatz-Analyse“**:
 ## Feedback geben
 
 Bitte gib uns Feedback zu folgenden Punkten:
-👉 **Gib dein Feedback hier ab:** [Feedback-Seite öffnen](https://github.com/dein-nutzername/dein-repo/issues)
+👉 **Gib dein Feedback hier ab:** [Feedback-Seite öffnen](https://umfragen.tu-dortmund.de/index.php/614683?lang=de)
 
 | Bereich         | Beispielhafte Fragen |
 |----------------|----------------------|
