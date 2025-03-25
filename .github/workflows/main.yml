@@ -59,7 +59,9 @@ jobs:
             # Netzwerkanalyse Tool – Builds & Hinweise
 
             Hier findest du die neuesten Builds für **Windows**, **macOS** und **Linux**.
-
+            
+            🔹 **Testdaten für das Tool findest du im Repository unter [`datasets-testen`](https://github.com/useruser300/Netzwerkanalyse/tree/main/datasets-testen)**
+            
             ---
 
             ## Systemkompatibilität – bitte vor dem Download beachten
@@ -160,5 +162,5 @@ jobs:
             ---
 
             Viel Spaß beim Testen – und danke für dein Feedback!  
-            ➡️ Gib dein Feedback hier ab: [Feedback-Seite öffnen](https://github.com/dein-nutzername/dein-repo/issues)  
-            Bei Fragen oder Fehlern gerne per Mail an: [deine@email.de](mailto:deine@email.de)
+            ➡️ Gib dein Feedback hier ab: [Feedback-Seite öffnen](https://umfragen.tu-dortmund.de/index.php/614683?lang=de)  
+            Bei Fragen oder Fehlern gerne per Mail an: [ali.almazaal@gmail.com](ali.almazaal@gmail.com)
