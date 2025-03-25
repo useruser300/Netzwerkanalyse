@@ -134,6 +134,9 @@ Das Tool steht als **Release auf GitHub** zur Verfügung:
 
 🔗 **[→ Zum GitHub Release](https://github.com/useruser300/Netzwerkanalyse/releases)**
 
+📁 Testdaten für das Tool findest du im Repository unter datasets-testen
+➡️ Diese Daten kannst du nutzen, um die Analyse- und Visualisierungsfunktionen auszuprobieren.
+
 Dort findest du:
 - vorkompilierte Versionen für **Windows, macOS und Linux**
 - alternativ ein `.zip`-Archiv zum manuellen Start
